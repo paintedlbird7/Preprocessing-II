@@ -8,15 +8,22 @@ img {
 
 header {
     width: 100%;
-    border-bottom: 1px dashed silver;
     display: flex;
     justify-content: space-between;
+    
+    // @media (max-width: 500px) {
+    //     border-bottom: 3px solid red;
+    // }
 
     // position: absolute;
     // top: 0px;
     // right: 50px;
     //.custom-layout(space-between, center);
     
+    // hr {
+    //     border: 20px dashed silver;
+    //     width: 100;
+    // }
 
   
     h1 {
@@ -43,6 +50,12 @@ header {
   
         // }
       }
+
+
+
+      @media @mobile {
+        width: 100%;
+    }
 
     //   .footer2 {
     //     width: 100%;
