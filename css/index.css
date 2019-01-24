@@ -273,51 +273,76 @@ header nav a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border: 1px solid red;
+}
+@media ( max-width: 500px ) {
+  .home .content-section {
+    border: 5px solid grey;
+    flex-direction: column;
+    width: max-content;
+  }
 }
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
-  
+  border: 1px solid red;
 }
-.home .content-section .img-content {
+.home .content-section .text-content .img-content {
   width: 48%;
   padding-left: 1%;
+  border: 1px solid red;
 }
-.home .content-section .img-content img {
+.home .content-section .text-content .img-content img {
   border-radius: 10px;
+  border: 1px solid red;
 }
-.home .inverse-content {
+.home .content-section .text-content .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+  border: 1px solid red;
 }
-.home .inverse-content .text-content {
+.home .content-section .text-content .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
+  border: 1px solid red;
 }
-.home .inverse-content .img-content {
+.home .content-section .text-content .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
+  border: 1px solid red;
 }
-.home .content-destination {
+.home .content-section .text-content .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+  border: 1px solid red;
 }
-@media (max-width: 500px) {
-  .home .content-destination {
-    width: 100%;
+@media ( max-width: 500px ) {
+  .home .content-section .text-content .content-destination {
+    border: 5px solid pink;
     flex-direction: column;
+    width: max-content;
   }
 }
-.home .content-destination img {
+.home .content-section .text-content .content-destination img {
   border-radius: 10px;
+  border: 1px solid red;
 }
-.home .content-pick {
+.home .content-section .text-content .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+  border: 1px solid red;
 }
-.home .content-pick .destination {
+@media ( max-width: 500px ) {
+  .home .content-section .text-content .content-pick {
+    border: 5px solid purple;
+    flex-direction: column;
+    width: max-content;
+  }
+}
+.home .content-section .text-content .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+  border: 1px solid red;
 }

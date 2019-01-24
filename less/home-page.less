@@ -5,50 +5,82 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border: 1px solid red;
 
+
+    @media @phone {
+      border: 5px solid grey;
+      flex-direction: column;
+      width: max-content;
+    }
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
-    }
+      border: 1px solid red;
+    
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      border: 1px solid red;
+
 
       img {
         border-radius: 10px;
-      }
+        border: 1px solid red;
+
     }
   }
 
+
+
+// adventure awaits
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    border: 1px solid red;
+
+    // @media @phone {
+    //   border: 5px solid black;
+    //   flex-direction: column;
+    //   width: max-content;
+    // }
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      border: 1px solid red;
+
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      border: 1px solid red;
+
     }
   }
+
+
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    border: 1px solid red;
 
-    @media @mobile {
-      width: 100%;
+
+    @media @phone {
+      border: 5px solid pink;
       flex-direction: column;
-  }
+      width: max-content;
+    }
 
     img {
       border-radius: 10px;
+      border: 1px solid red;
+
     }
   }
 
@@ -57,13 +89,22 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    border: 1px solid red;
+
+    @media @phone {
+      border: 5px solid purple;
+      flex-direction: column;
+      width: max-content;
+    }
+
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      border: 1px solid red;
+
     }
   }
 }// home
-
-
-
+  }
+}
