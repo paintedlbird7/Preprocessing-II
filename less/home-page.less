@@ -42,11 +42,11 @@
     border-bottom: 2px dashed @navigation-border;
     border: 1px solid red;
 
-    // @media @phone {
-    //   border: 5px solid black;
-    //   flex-direction: column;
-    //   width: max-content;
-    // }
+    @media @phone {
+      border: 5px solid red;
+      flex-direction: column;
+      width: max-content;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -84,27 +84,29 @@
     }
   }
 
-  .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+
+}// home
+  }
+}
+.content-pick {
+  // background-color: red;
+  padding-top: 30px;
+  border-top: 2px dashed @navigation-border;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+
+  @media @phone {
+    border: 5px solid purple;
+    flex-direction: column;
+    width: max-content;
+  }
+
+
+  .destination {
+    width: 30%;
+    margin-bottom: 30px;
     border: 1px solid red;
 
-    @media @phone {
-      border: 5px solid purple;
-      flex-direction: column;
-      width: max-content;
-    }
-
-
-    .destination {
-      width: 30%;
-      margin-bottom: 30px;
-      border: 1px solid red;
-
-    }
-  }
-}// home
   }
 }

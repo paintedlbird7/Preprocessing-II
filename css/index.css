@@ -301,6 +301,13 @@ header nav a {
   border-bottom: 2px dashed #C0C0C0;
   border: 1px solid red;
 }
+@media ( max-width: 500px ) {
+  .home .content-section .text-content .inverse-content {
+    border: 5px solid red;
+    flex-direction: column;
+    width: max-content;
+  }
+}
 .home .content-section .text-content .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
@@ -327,7 +334,7 @@ header nav a {
   border-radius: 10px;
   border: 1px solid red;
 }
-.home .content-section .text-content .content-pick {
+.content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
@@ -335,13 +342,13 @@ header nav a {
   border: 1px solid red;
 }
 @media ( max-width: 500px ) {
-  .home .content-section .text-content .content-pick {
+  .content-pick {
     border: 5px solid purple;
     flex-direction: column;
     width: max-content;
   }
 }
-.home .content-section .text-content .content-pick .destination {
+.content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
   border: 1px solid red;
